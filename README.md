@@ -170,5 +170,5 @@ Data flows through a series of **filters** connected by **pipes**, each processi
 
 ---
 
-**🧠 Key Takeaway:**
+> **🧠 Key Takeaway:**
 Software Architecture provides structure and scalability, while **Git & GitHub** enable version control and collaboration — together forming the foundation of modern software development.

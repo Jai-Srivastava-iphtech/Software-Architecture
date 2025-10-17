@@ -14,6 +14,7 @@ Like a **building’s blueprint**, it shows how all parts (components) fit toget
 ---
 
 ## 1. Layered Architecture (N-Tier)
+![Layered Architecture](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4iEyFYojnd0mS2xDcTBbIQ.png)
 
 **Concept:**
 Application divided into horizontal layers, each with a specific role (UI, logic, data).
@@ -26,37 +27,40 @@ Application divided into horizontal layers, each with a specific role (UI, logic
 * Data Access (Database/API)
 
 **Analogy:** Multi-story building — each floor has a clear purpose.
-<br/>**Pros:** Modular, maintainable, testable.
-<br/>**Cons:** Performance overhead, rigid structure.
-<br/>**Use When:** Small to medium systems prioritizing structure.
+<br/>-**Pros:** Modular, maintainable, testable.
+<br/>-**Cons:** Performance overhead, rigid structure.
+<br/>-**Use When:** Small to medium systems prioritizing structure.
 
 ---
 
 ## 2. Client-Server Architecture
+![Client-Server Architecture](https://miro.medium.com/v2/resize:fit:640/format:webp/1*Zmq99F04kxAOvyOH9EnddA.png)
 
 **Concept:**
 Clients send requests; a central server processes and responds.
 
 **Analogy:** Restaurant — customers (clients) order food; the kitchen (server) prepares it.
-<br/>**Pros:** Centralized control, easy updates, scalable.
-<br/>**Cons:** Single point of failure, server load.
-<br/>**Use When:** Web and mobile applications.
+<br/>-**Pros:** Centralized control, easy updates, scalable.
+<br/>-**Cons:** Single point of failure, server load.
+<br/>-**Use When:** Web and mobile applications.
 
 ---
 
 ## 3. Microservice Architecture
+![Microservice Architecture](https://miro.medium.com/v2/resize:fit:640/format:webp/1*ACUmDJMHKO-_YI-JuHJWOg.png)
 
 **Concept:**
 System divided into many **small, independent services**, each with its own logic and data.
 
 **Analogy:** Shopping mall — many small stores, each handling one thing.
-<br/>**Pros:** Independent deployment, scalability, flexibility.
-<br/>**Cons:** Complex management, network overhead.
-<br/>**Use When:** Large, complex, scalable systems.
+<br/>-**Pros:** Independent deployment, scalability, flexibility.
+<br/>-**Cons:** Complex management, network overhead.
+<br/>-**Use When:** Large, complex, scalable systems.
 
 ---
 
 ## 4. Event-Driven Architecture (EDA)
+![Event-Driven Architecture (EDA)](https://miro.medium.com/v2/resize:fit:720/format:webp/1*OfsVUI2J191NM17SOaUIIQ.png)
 
 **Concept:**
 Components communicate via **events** instead of direct calls.
@@ -65,13 +69,14 @@ Components communicate via **events** instead of direct calls.
 * **Message-Driven Design:** Uses brokers like RabbitMQ or Kafka.
 
 **Analogy:** Notification system — parts react when an event occurs.
-<br/>**Pros:** Scalable, loosely coupled, asynchronous.
-<br/>**Cons:** Debugging and data consistency challenges.
-<br/>**Use When:** Real-time systems (chat, IoT, e-commerce).
+<br/>-**Pros:** Scalable, loosely coupled, asynchronous.
+<br/>-**Cons:** Debugging and data consistency challenges.
+<br/>-**Use When:** Real-time systems (chat, IoT, e-commerce).
 
 ---
 
 ## 5. Model-View-Controller (MVC)
+![Model-View-Controller (MVC)](https://miro.medium.com/v2/resize:fit:640/format:webp/1*MTJ9gO61Kq0Fl7J5tGtvfA.png)
 
 **Concept:**
 Splits application into:
@@ -79,65 +84,71 @@ Splits application into:
 * **Model** → Data & Logic
 * **View** → UI
 * **Controller** → Bridge between Model & View
+  
 <br/>**Analogy:** Waiter (Controller) connects customers (View) with chef (Model).
-<br/>**Pros:** Clear separation, testable, reusable.
-<br/>**Cons:** Overhead for small apps.
-<br/>**Use When:** Web or GUI applications.
+<br/>-**Pros:** Clear separation, testable, reusable.
+<br/>-**Cons:** Overhead for small apps.
+<br/>-**Use When:** Web or GUI applications.
 
 ---
 
 ## 6. Service-Oriented Architecture (SOA)
+![Service-Oriented Architecture (SOA)](https://miro.medium.com/v2/resize:fit:720/format:webp/1*85dUPNqWfazXosQXoO6lUA.png)
 
 **Concept:**
 App divided into independent **services** communicating via APIs (HTTP/SOAP).
 <br/>**Analogy:** Restaurant kitchen — each chef (service) has a role.
-<br/>**Pros:** Reusability, interoperability.
-<br/>**Cons:** Complex setup, possible performance issues.
-<br/>**Use When:** Enterprise or distributed systems.
+<br/>-**Pros:** Reusability, interoperability.
+<br/>-**Cons:** Complex setup, possible performance issues.
+<br/>-**Use When:** Enterprise or distributed systems.
 
 ---
 
 ## 7. Repository Pattern
+![Repository Pattern](https://miro.medium.com/v2/resize:fit:720/format:webp/1*DjeloQltyC_1VqJBLuSF2w.png)
 
 **Concept:**
 Acts as a **middle layer** between the app and the database.
 <br/>**Analogy:** Library counter — request a book (data) without touching the shelves.
-<br/>**Pros:** Cleaner data handling, easier testing.
-<br/>**Cons:** Overhead for small projects.
-<br/>**Use When:** Projects needing maintainable data access.
+<br/>-**Pros:** Cleaner data handling, easier testing.
+<br/>-**Cons:** Overhead for small projects.
+<br/>-**Use When:** Projects needing maintainable data access.
 
 ---
 
 ## 8. CQRS (Command Query Responsibility Segregation)
+![Command Query Responsibility Segregation](https://miro.medium.com/v2/resize:fit:720/format:webp/1*niJDuXisVCIswmcFs3-leQ.png)
 
 **Concept:**
 Separates **read (Query)** and **write (Command)** operations for performance.
 <br/>**Analogy:** Two counters — one for ordering, one for checking status.
-<br/>**Pros:** Scalable, fast, organized.
-<br/>**Cons:** Complex setup, temporary inconsistencies.
-<br/>**Use When:** High-traffic systems (e-commerce, banking).
+<br/>-**Pros:** Scalable, fast, organized.
+<br/>-**Cons:** Complex setup, temporary inconsistencies.
+<br/>-**Use When:** High-traffic systems (e-commerce, banking).
 
 ---
 
 ## 9. Domain-Driven Design (DDD)
+![Domain-Driven Design](https://miro.medium.com/v2/resize:fit:720/format:webp/1*0_7AfVRzGGt-dCuheQsSXQ.png)
 
 **Concept:**
 Focuses on **business domain understanding** and maps real-world processes to code.
 <br/>**Analogy:** City map — each area (context) has its own rules.
-<br/>**Pros:** Modular, aligned with business needs.
-<br/>*Cons:** Complex and time-consuming.
-<br/>**Use When:** Large, business-critical systems.
+<br/>-**Pros:** Modular, aligned with business needs.
+<br/>-**Cons:** Complex and time-consuming.
+<br/>-**Use When:** Large, business-critical systems.
 
 ---
 
 ## 10. Pipes and Filters Pattern
+![Pipes and Filters Pattern](https://miro.medium.com/v2/resize:fit:720/format:webp/1*FQT3hen66brqircqBjPBkw.png)
 
 **Concept:**
 Data flows through a series of **filters** connected by **pipes**, each processing sequentially.
 <br/>**Analogy:** Water filter — each layer cleans or transforms the data.
-<br/>**Pros:** Modular, scalable, reusable.
-<br/>**Cons:** Overhead in long pipelines.
-<br/>**Use When:** Data pipelines, ETL, media processing.
+<br/>-**Pros:** Modular, scalable, reusable.
+<br/>-**Cons:** Overhead in long pipelines.
+<br/>-**Use When:** Data pipelines, ETL, media processing.
 
 ---
 
